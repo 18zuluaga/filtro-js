@@ -60,46 +60,11 @@
       "destination": "Italia-Roma",
       "deparute": "2024-08-12",
       "arrival": "2024-08-13",
-      "capacity": 18,
+      "capacity": 17,
       "id": "8125"
     }
   ],
   "bookings": [
-    {
-      "id": "cf61",
-      "flightId": "4232",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    },
-    {
-      "id": "5ebd",
-      "flightId": "e008",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    },
-    {
-      "id": "8f41",
-      "flightId": "4232",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    },
-    {
-      "id": "d968",
-      "flightId": "4232",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    },
-    {
-      "id": "b187",
-      "flightId": "8125",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    },
-    {
-      "id": "92a3",
-      "flightId": "8125",
-      "userId": "e1f0",
-      "bookingDate": "2024-06-05"
-    }
+    
   ]
 }

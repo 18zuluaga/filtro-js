@@ -71,7 +71,7 @@ export function HomePage(){
         });
 
         
-        if(localStorage.getItem('idrol') == 1){
+        if(localStorage.getItem('idrol') === "1"){
             const btnsEdit = document.querySelectorAll('.btn-edit')
             const btnsDelete = document.querySelectorAll('.btn-delete')
             for(let btnEdit of btnsEdit){
@@ -159,7 +159,7 @@ export function HomePage(){
                             body: JSON.stringify({
                                 flightId: btnBuy.getAttribute('data-id'),
                                 userId: localStorage.getItem('id'),
-                                bookingDate: "2024-06-05",
+                                bookingDate: new Date().toISOString(),
                             })
                         });
 
@@ -180,7 +180,7 @@ export function HomePage(){
 
             const reservationsfetch = await fetch(`http://localhost:3000/bookings?userId=${localStorage.getItem('id')}`)
             const reservationToJson = await reservationsfetch.json();
-
+            console.log(reservationToJson)
             reservationToJson.forEach(async (element) => {
                 const flightReservation = await fetch(`http://localhost:3000/flights/${element.flightId}`);
                 const flightTojsonReservation = await flightReservation.json();
